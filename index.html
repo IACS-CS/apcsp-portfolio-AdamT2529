@@ -14,3 +14,23 @@
     <script type="module" src="/src/scripts/main.js"></script>
   </body>
 </html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dark Mode</title>
+</head>
+<body>
+  <button id="colorButton">Dark Mode</button>
+
+  <script>
+    // This function changes the background color of the body
+    function changeBackgroundColor() {
+      document.body.style.backgroundColor = "black";
+    }
+
+    // Get the button and add a click event
+    const button = document.getElementById("colorButton");
+    button.addEventListener("click", changeBackgroundColor);
+  </script>
+</body>
+</html>
