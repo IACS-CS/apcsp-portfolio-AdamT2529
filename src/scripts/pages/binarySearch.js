@@ -6,15 +6,15 @@ export function renderBinarySearch() {
   /* html */
   return `
     <!-- code generated in binarySearch.js -->
-    <h1>Binary Search Project</h1>    
+    <h1 data-aos="fade-up">Binary Search Project</h1>    
     ${renderMenu()}
     <article>
       <p>Assignment: Create a program built on the concept of binary search</p>
       <hr>
-      <p>My project was super fun, I worked hard on it!</p>
+      <p data-aos="fade-in">My project was super fun, I worked hard on it!</p>
       ${renderIframe(
-        "https://placehold.co/600x400?text=Your+Project+Here",
-        "My Project Title"
+        "https://iacs-cs.github.io/binary-search-adam/",
+        "Which Spongebob Character Are You?"
       )}
     </article>
     <!-- end code generated in binarySearch.js -->

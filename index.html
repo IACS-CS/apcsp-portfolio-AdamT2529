@@ -16,21 +16,23 @@
 </html>
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Dark Mode</title>
-</head>
-<body>
-  <button id="colorButton">Dark Mode</button>
+<button id="colorButton">Dark Mode</button>
+<script>
+  // Start with white background
+  let isDark = false;
 
-  <script>
-    // This function changes the background color of the body
-    function changeBackgroundColor() {
+  function toggleBackgroundColor() {
+    if (isDark) {
+      document.body.style.backgroundColor = "white";
+      document.getElementById("colorButton").textContent = "Dark Mode";
+    } else {
       document.body.style.backgroundColor = "black";
+      document.getElementById("colorButton").textContent = "Light Mode";
     }
+    isDark = !isDark;
+  }
 
-    // Get the button and add a click event
-    const button = document.getElementById("colorButton");
-    button.addEventListener("click", changeBackgroundColor);
-  </script>
-</body>
-</html>
+  document.getElementById("colorButton").addEventListener("click", toggleBackgroundColor);
+</script>
+
+
