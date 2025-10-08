@@ -8,6 +8,7 @@ export function renderMenu() {
         <li><a href="#/">Home</a></li>
         <li><a href="#/binary-search">Binary Search Project</a></li>
         <li><a href="#/citations">Citations</a></li>
+        <li><a href="#/license">License</a></li>
       </ul>
     </nav>
     <!-- end code generated in renderMenu.js -->

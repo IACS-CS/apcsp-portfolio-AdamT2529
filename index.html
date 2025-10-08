@@ -16,23 +16,26 @@
 </html>
 <!DOCTYPE html>
 <html>
-<button id="colorButton">Dark Mode</button>
-<script>
-  // Start with white background
-  let isDark = false;
+  <button id="colorButton">Dark Mode</button>
+  <script>
+    // Start with white background
+    let isDark = false;
 
-  function toggleBackgroundColor() {
-    if (isDark) {
-      document.body.style.backgroundColor = "white";
-      document.getElementById("colorButton").textContent = "Dark Mode";
-    } else {
-      document.body.style.backgroundColor = "black";
-      document.getElementById("colorButton").textContent = "Light Mode";
+    function toggleBackgroundColor() {
+      if (isDark) {
+        document.body.classList.remove("dark-mode");
+        document.body.style.backgroundColor = "white";
+        document.getElementById("colorButton").textContent = "Dark Mode";
+      } else {
+        document.body.classList.add("dark-mode");
+        document.body.style.backgroundColor = "black";
+        document.getElementById("colorButton").textContent = "Light Mode";
+      }
+      isDark = !isDark;
     }
-    isDark = !isDark;
-  }
 
-  document.getElementById("colorButton").addEventListener("click", toggleBackgroundColor);
-</script>
-
-
+    document
+      .getElementById("colorButton")
+      .addEventListener("click", toggleBackgroundColor);
+  </script>
+</html>

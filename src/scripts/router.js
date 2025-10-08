@@ -2,6 +2,7 @@
 import { renderWelcome } from "./pages/welcome.js";
 import { renderBinarySearch } from "./pages/binarySearch.js";
 import { renderCitations } from "./pages/citations.js";
+import { renderLicense } from "./pages/license.js";
 
 /* route takes a path and chooses which page to render.
 It is called each time the user clicks on a navigation link */
@@ -13,10 +14,12 @@ export function route(path) {
     return renderBinarySearch();
   } else if (path === "/citations") {
     return renderCitations ();
-  } else {
+  } else if (path === "/license") {
+    return renderLicense();
+  }
     return `<h1>404 Not Found</h1><a href="#/">Back Home</a>`;
   }
-}
+
 
 export function startRouter() {
   function render() {
