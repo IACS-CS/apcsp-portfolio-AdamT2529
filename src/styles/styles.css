@@ -103,3 +103,6 @@ button:hover,
   background: #6366f1;
   color: #fff;
 }
+.small-image {
+  width: 150px;
+}
