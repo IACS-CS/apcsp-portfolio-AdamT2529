@@ -11,6 +11,7 @@ export function renderWelcome() {
     <p data-aos="fade-in">I am a student at IACS. I am taking the class of AP Computer Science Principles and this website consists of my favorite work I have created in this course.</p>
     <!-- an example image: Notice that images live in public/ -->
     <img src="./IACS.jpeg" alt="A blue circle" class="small-image">
+    <img src="./example-circle.svg" class="small-image">
 
     <!-- end code generated in welcome.js -->
   `;
