@@ -10,8 +10,8 @@ export function renderWelcome() {
     <h2 data-aos="zoom-in-up">About Me</h2>
     <p data-aos="fade-in">I am a student at IACS. I am taking the class of AP Computer Science Principles and this website consists of my favorite work I have created in this course.</p>
     <!-- an example image: Notice that images live in public/ -->
-    <img src="./example-circle.jpeg" class="small-image">
-    <img src="./IACS.jpeg" class="small-image">
+    <img src="./example-circle.jpeg" class="small-image && animate__animated animate__jackInTheBox">
+    <img src="./IACS.jpeg" class="small-image && animate__animated animate__fadeInRightBig">
 
     <!-- end code generated in welcome.js -->
   `;
