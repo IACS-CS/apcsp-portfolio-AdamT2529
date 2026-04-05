@@ -4,6 +4,8 @@ import { renderProjects } from "./pages/projects.js";
 import { renderBinarySearch } from "./pages/binarySearch.js";
 import { renderCitations } from "./pages/citations.js";
 import { renderLicense } from "./pages/license.js";
+import { renderCanvasGame } from "./pages/canvasGame.js";
+import { renderBallMatcherGame } from "./pages/ballMatcherGame.js";
 
 /* route takes a path and chooses which page to render.
 It is called each time the user clicks on a navigation link */
@@ -15,6 +17,10 @@ export function route(path) {
     return renderProjects();
   } else if (path === "/binary-search") {
     return renderBinarySearch();
+  } else if (path === "/canvas-game") {
+    return renderCanvasGame();
+  } else if (path === "/ball-matcher") {
+    return renderBallMatcherGame();
   } else if (path === "/citations") {
     return renderCitations();
   } else if (path === "/license") {

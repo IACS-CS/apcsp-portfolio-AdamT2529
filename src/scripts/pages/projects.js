@@ -15,6 +15,14 @@ export function renderProjects() {
         <p>A fun questionnaire based on Spongebob Squarepants characters that uses binary search to match users with their character.</p>
       </li>
       <!-- Add more projects here as you create them -->
+      <li data-aos="fade-up">
+        <a href="#/canvas-game">Canvas Game Project</a>
+        <p>Description of Project 2 goes here.</p>
+      </li>
+      <li data-aos="fade-up">
+        <a href="#/ball-matcher">Ball Matcher Game Project</a>
+        <p>Description of Project 3 goes here.</p>
+      </li>
     </ul>
     <!-- end code generated in projects.js -->
   `;
