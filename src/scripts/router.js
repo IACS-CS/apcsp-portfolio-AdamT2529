@@ -1,5 +1,6 @@
 // src/scripts/router.js
 import { renderWelcome } from "./pages/welcome.js";
+import { renderProjects } from "./pages/projects.js";
 import { renderBinarySearch } from "./pages/binarySearch.js";
 import { renderCitations } from "./pages/citations.js";
 import { renderLicense } from "./pages/license.js";
@@ -10,16 +11,17 @@ It is called each time the user clicks on a navigation link */
 export function route(path) {
   if (path === "" || path === "/") {
     return renderWelcome();
+  } else if (path === "/projects") {
+    return renderProjects();
   } else if (path === "/binary-search") {
     return renderBinarySearch();
   } else if (path === "/citations") {
-    return renderCitations ();
+    return renderCitations();
   } else if (path === "/license") {
     return renderLicense();
   }
-    return `<h1>404 Not Found</h1><a href="#/">Back Home</a>`;
-  }
-
+  return `<h1>404 Not Found</h1><a href="#/">Back Home</a>`;
+}
 
 export function startRouter() {
   function render() {
