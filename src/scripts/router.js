@@ -6,6 +6,10 @@ import { renderCitations } from "./pages/citations.js";
 import { renderLicense } from "./pages/license.js";
 import { renderCanvasGame } from "./pages/canvasGame.js";
 import { renderBallMatcherGame } from "./pages/ballMatcherGame.js";
+import { renderImageFilter } from "./pages/imagefilter.js";
+import { renderSystemsDiseaseModeling } from "./pages/systemsdiseasemodeling.js";
+
+/* This file contains the router, which is responsible for showing different pages when the user clicks on links. */
 
 /* route takes a path and chooses which page to render.
 It is called each time the user clicks on a navigation link */
@@ -21,6 +25,10 @@ export function route(path) {
     return renderCanvasGame();
   } else if (path === "/ball-matcher") {
     return renderBallMatcherGame();
+  } else if (path === "/image-filter") {
+    return renderImageFilter();
+  } else if (path === "/systems-disease") {
+    return renderSystemsDiseaseModeling();
   } else if (path === "/citations") {
     return renderCitations();
   } else if (path === "/license") {

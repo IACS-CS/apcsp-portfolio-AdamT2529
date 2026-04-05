@@ -23,6 +23,14 @@ export function renderProjects() {
         <a href="#/ball-matcher">Ball Matcher Game Project</a>
         <p>Description of Project 3 goes here.</p>
       </li>
+        <li data-aos="fade-up">
+        <a href="#/image-filter">Image Filter Project</a>
+        <p>Description of Project 4 goes here.</p>
+      </li>
+      <li data-aos="fade-up">
+        <a href="#/systems-disease">Systems Disease Modeling Project</a>
+        <p>Description of Project 5 goes here.</p>
+      </li>
     </ul>
     <!-- end code generated in projects.js -->
   `;
